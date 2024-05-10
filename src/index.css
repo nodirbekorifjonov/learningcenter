@@ -1,0 +1,69 @@
+/* fonts */
+@import url(./fonts/fonts.css);
+
+:root {
+  --primary-color: #2aaa94;
+  --secondary-color: #324361;
+  --white-color: #ffffff;
+  --text-color: #4e596b;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+#root {
+  height: 100%;
+}
+
+.App {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  display: flex;
+}
+
+body {
+  height: 100%;
+  font-size: 1.6rem;
+  font-family: "Saira";
+  color: var(--text-color);
+  overflow-x: hidden;
+}
+
+.container {
+  width: 100%;
+  max-width: 1664px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Responsive */
+@media screen and (max-width: 500px) {
+  .container {
+    padding: 0 1rem;
+  }
+}

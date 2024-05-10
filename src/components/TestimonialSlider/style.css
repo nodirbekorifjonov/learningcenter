@@ -1,0 +1,55 @@
+.swiper {
+  width: 100%;
+  height: auto;
+}
+
+/* .swiper-wrapper {
+  justify-content: center;
+} */
+
+.swiper-slide {
+  font-size: 2rem;
+  background: #fff;
+  border-radius: 3rem;
+  padding: 5.1rem 3.7rem 5.1rem 4.2rem;
+
+  /* Center slide text vertically */
+  display: flex;
+  flex-direction: column;
+}
+
+.slider-header {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  margin-bottom: 4rem;
+}
+
+.slider-header h5 {
+  font-family: "RowdiesBold";
+  font-size: 2.5rem;
+}
+
+.swiper-slide p {
+  font-family: "Saira";
+  color: #7e7eaa;
+  margin-bottom: auto;
+  font-size: 1.8rem;
+  margin-bottom: 4rem;
+}
+
+/* Responsives */
+@media screen and (max-width: 1200px) {
+  .swiper-slide {
+    padding: 4.1rem 2.7rem 4.1rem 3.2rem;
+    font-size: 1.8rem;
+  }
+
+  .slider-header h5 {
+    font-size: 2rem;
+  }
+
+  .swiper-slide p {
+    font-size: 1.6rem;
+  }
+}

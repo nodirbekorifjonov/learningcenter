@@ -1,0 +1,274 @@
+#footer {
+  background: linear-gradient(
+    135deg,
+    rgba(51, 29, 168, 1) 0%,
+    rgba(134, 90, 239, 1) 100%
+  );
+  color: var(--white-color);
+  font-family: "SairaMedium";
+  font-size: 1.8rem;
+}
+
+/* Footer Container */
+/* .footer__container {
+} */
+
+/* Top Footer */
+.footer-top {
+  padding: 11.8rem 0 8.85rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 6rem;
+  border-bottom: 1px solid #ffffff52;
+}
+
+/* Top Footer Information Block */
+.footer-top__info {
+  width: 47.7rem;
+  font-family: "Saira";
+}
+
+/* Footer Logo */
+.footer-top__logo img {
+  height: 6rem;
+  margin-bottom: 7.4rem;
+}
+
+/* Top Footer Pages Links */
+.footer-top__pages {
+  width: 20.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 8.4rem;
+  padding-top: 1rem;
+}
+
+.footer-top__heading {
+  font-family: "InterBold";
+  font-size: 2.5rem;
+}
+
+.footer-top__pages-list {
+  display: flex;
+  gap: 5.2rem;
+}
+
+.footer-top__pages-item {
+  display: flex;
+  flex-direction: column;
+  gap: 2.2rem;
+}
+
+.footer-top__pages-link:hover {
+  text-decoration: underline;
+}
+
+/* Top Footer Contacts */
+.footer-top__contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 8.4rem;
+  padding-top: 1rem;
+}
+
+.footer-top__contacts-info {
+  display: flex;
+  gap: 3rem;
+}
+
+.footer-top__contacts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2.2rem;
+}
+
+.footer-top__contacts-item {
+  display: flex;
+  align-items: center;
+  gap: 2.2rem;
+}
+
+.footer-top__contacts-link {
+  display: block;
+}
+
+/* Top Footer Address */
+.footer-top__address {
+  width: 30.9rem;
+  display: flex;
+  gap: 2.4rem;
+}
+
+/* Bottom Footer */
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 0;
+}
+
+/* Footer Copyright */
+.footer__copyright {
+  /* font-size: 1.8rem; */
+  font-family: "Saira";
+}
+
+/* Footer Socials */
+.footer-socials__list {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.footer-socials__item {
+  transition: all 0.3s ease;
+}
+
+.footer-socials__item:hover {
+  transform: translateY(-3px);
+}
+
+/* Responsives */
+@media screen and (max-width: 1372px) {
+  .footer-top__info {
+    max-width: 47rem;
+  }
+
+  .footer-top__contacts-link {
+    width: 21rem;
+  }
+}
+
+@media screen and (max-width: 1277px) {
+  .footer-top__contacts-info {
+    flex-direction: column;
+    gap: 2.2rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  /* Footer Logo */
+  .footer-top__logo img {
+    height: 5rem;
+    margin-bottom: 3rem;
+  }
+
+  /* Top Footer Pages Links */
+  .footer-top__pages,
+  .footer-top__contacts {
+    gap: 4.2rem;
+  }
+
+  .footer-top__heading {
+    font-size: 2rem;
+    padding-top: 0;
+  }
+}
+
+@media screen and (max-width: 940px) {
+  #footer {
+    font-size: 1.6rem;
+  }
+
+  .footer-top__heading {
+    font-size: 1.8rem;
+  }
+
+  .footer-top__logo img {
+    height: 4rem;
+  }
+
+  .footer-top__pages,
+  .footer-top__contacts {
+    gap: 3.8rem;
+  }
+
+  .footer-top__address {
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .footer-top {
+    flex-wrap: wrap;
+    padding: 6rem 0 4rem;
+    gap: 4rem;
+  }
+
+  .footer-top__contacts-info {
+    flex-direction: row;
+  }
+}
+
+@media screen and (max-width: 754px) {
+  .footer-top {
+    justify-content: center;
+  }
+
+  .footer-top__info {
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-top__pages {
+    width: 50%;
+    text-align: center;
+    align-items: center;
+    padding: 0;
+  }
+
+  .footer-top__contacts {
+    width: 80%;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 678px) {
+  .footer-top__pages {
+    width: 70%;
+  }
+
+  .footer-top__pages-list {
+    justify-content: space-between;
+    gap: 7rem;
+  }
+
+  .footer-top__contacts {
+    width: 100%;
+  }
+
+  .footer-top__contacts-link {
+    width: auto;
+  }
+
+  .footer-top__pages,
+  .footer-top__contacts {
+    gap: 3rem;
+  }
+
+  .footer-top__contacts-info {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .footer-top__contacts-item {
+    gap: 1rem;
+  }
+
+  .footer-top__address {
+    max-width: 30.9rem;
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .footer-bottom {
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+  }
+}
