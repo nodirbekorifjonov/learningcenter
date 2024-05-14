@@ -1,0 +1,146 @@
+/* Course Cards */
+.home-course__list {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.home-course__link {
+  display: block;
+  width: 35rem;
+  border-radius: 1rem;
+  background-color: var(--white-color);
+  transition: all 0.3s ease;
+}
+
+.home-course__link:hover {
+  transform: scale(1.03);
+  box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+}
+
+.home-course__card-img {
+  width: 100%;
+  height: 22.5rem;
+  object-fit: cover;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+}
+
+/* Course Card Body */
+.home-course__card-body {
+  padding: 1.6rem 2rem 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.home-course__card-type {
+  padding: 0.5rem 0.8rem;
+  background-color: rgba(127, 86, 217, 0.1);
+  color: #7f56d9;
+  font-family: "InterMedium";
+  font-size: 1.3rem;
+  border-radius: 3px;
+  align-self: flex-end;
+  margin-bottom: 0.7rem;
+}
+
+.home-course__card-name {
+  font-family: "InterMedium";
+  font-size: 2.1rem;
+  margin-bottom: 1.2rem;
+  color: #323232;
+}
+
+.home-course__card-description {
+  font-size: 1.6rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #066ac9;
+  margin-bottom: 1.6rem;
+}
+
+.home-course__card-rating {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.home-course__card-stars {
+  color: #f7c32e;
+}
+
+.home-course__card-rating span {
+  color: #323232;
+  font-family: "InterMedium";
+  font-size: 1.5rem;
+}
+
+/* Course Card Footer */
+.home-course__card-footer {
+  padding: 0 1.6rem 1.6rem;
+}
+
+.home-course__card-footer ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.home-course__card-line {
+  display: block;
+  height: 1px;
+  width: 100%;
+  background-color: #9a9ea4;
+  opacity: 0.25;
+  margin: 1.6rem 0;
+}
+
+/* Course Price */
+/* Course duration */
+.home-course__card-price,
+.home-course__card-duration {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.home-course__card-price h6 {
+  font-size: 1.6rem;
+  font-family: "InterBold";
+  color: #323232;
+}
+
+.home-course__card-duration h6 {
+  font-size: 1.6rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+}
+
+.home-course__card-price svg {
+  font-size: 1.8rem;
+  color: #df385b;
+}
+
+.home-course__card-duration svg {
+  font-size: 1.8rem;
+  color: #fab437;
+}
+
+/* Responsive */
+@media screen and (max-width: 769px) {
+  /* Course Cards */
+  .home-course__link {
+    width: 30rem;
+  }
+
+  /* Course Card Body */
+  .home-course__card-name {
+    font-size: 1.8rem;
+  }
+
+  .home-course__card-description {
+    font-size: 1.5rem;
+  }
+}

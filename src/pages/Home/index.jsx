@@ -4,14 +4,14 @@ import { Link } from "react-router-dom";
 // styles
 import "./style.css";
 // react-icons
-import { FaMoneyBillWave, FaTable } from "react-icons/fa6";
 import { IoIosArrowUp } from "react-icons/io";
 // data
 import courses from "../../data/courses.json";
 import testimonials from "../../data/testimonials.json";
-import { rating } from "../../components/Rating";
-// Testimonials slider
+// Components
 import TestimonialSlider from "../../components/TestimonialSlider";
+import Cards from "../../components/Cards";
+import TestDemoText from "../../components/TestModeText";
 
 const Home = () => {
   const [courseType, setCourseType] = useState("all");
@@ -38,6 +38,7 @@ const Home = () => {
 
   return (
     <>
+      <TestDemoText />
       {/* Hero Section */}
       <section id="hero" className="home-hero">
         <div className="container home-hero__container">
@@ -132,70 +133,7 @@ const Home = () => {
             </ul>
           </div>
           {/* Course Cards */}
-          <ul className="home-course__list">
-            {courses &&
-              courses
-                .filter(
-                  (course) =>
-                    courseType === "all" || course.courseType === courseType
-                )
-                .map((course) => {
-                  return (
-                    <li key={course.id} className="home-course__item">
-                      <Link className="home-course__link">
-                        <img
-                          className="home-course__card-img"
-                          src={`/assets/images/${course.courseImg}`}
-                          alt=""
-                        />
-                        <div className="home-course__card-body">
-                          {/* Course type */}
-                          <span className="home-course__card-type">
-                            {course.courseType}
-                          </span>
-                          {/* Course name */}
-                          <h3 className="home-course__card-name">
-                            {course.courseName}
-                          </h3>
-                          {/* Course description */}
-                          <p className="home-course__card-description">
-                            {`${
-                              course.courseDescription.length >= 65
-                                ? course.courseDescription.slice(0, 65)
-                                : course.courseDescription
-                            }...`}
-                          </p>
-                          {/* Course rating */}
-                          <div className="home-course__card-rating">
-                            {rating.map((star) => {
-                              return (
-                                star.id === course.courseRating && star.stars
-                              );
-                            })}
-                            <span>{`${course.courseRating}/5.0`}</span>
-                          </div>
-                        </div>
-                        {/* Course Card Footer */}
-                        <div className="home-course__card-footer">
-                          <span className="home-course__card-line"></span>
-                          <ul>
-                            {/* Course Price */}
-                            <li className="home-course__card-price">
-                              <FaMoneyBillWave />
-                              <h6>{`${course.coursePriceOffline.toLocaleString()} so'm`}</h6>
-                            </li>
-                            {/* Course duration */}
-                            <li className="home-course__card-duration">
-                              <FaTable />
-                              <h6>{`${course.courseDuration} oy`}</h6>
-                            </li>
-                          </ul>
-                        </div>
-                      </Link>
-                    </li>
-                  );
-                })}
-          </ul>
+          <Cards courses={courses} courseType={courseType} />
           {/* Course Buttons */}
           <Link className="home-course__btn site-btn">Barcha kurslar</Link>
         </div>
@@ -359,6 +297,7 @@ const Home = () => {
           <TestimonialSlider testimonials={testimonials} />
         </div>
       </section>
+      <TestDemoText />
       {showBackToTop && (
         <button className="back-to-top" onClick={handleBackToTop}>
           <IoIosArrowUp />
