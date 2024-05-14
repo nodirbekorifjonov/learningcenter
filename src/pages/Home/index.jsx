@@ -92,11 +92,10 @@ const Home = () => {
         <div className="container home-courses__container">
           <div className="home-course__heading home-section__heading">
             <h2 className="home-courses__title home-section__title">
-              Featured <span>Course</span>
+              Bizning <span>Kurslar</span>
             </h2>
             <p className="home-courses__description home-section__description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod temporidunt ut labore veniam...
+              Sifati kafolatlangan kurslarimizdan o'zingizga yoqqanini tanlang.
             </p>
           </div>
           {/* Course Filter */}
@@ -207,11 +206,11 @@ const Home = () => {
           {/* Blog Heading */}
           <div className="home-blog__heading home-section__heading">
             <h2 className="home-blog__title home-section__title">
-              Why <span>learn</span> with our courses?
+              Nima uchun aynan <span>WebX</span>da o'qishingiz kerak?
             </h2>
             <p className="home-blog__description home-section__description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod temporidunt ut labore veniam...
+              WebX zamonaviy kasblar o'quv markazi o'z o'quvchilariga quyidagi
+              bir nechta qulayliklarni kafolatlaydi
             </p>
           </div>
           {/* Blog Content */}
@@ -222,10 +221,10 @@ const Home = () => {
                 alt=""
                 className="home-blog__item-img"
               />
-              <h3 className="home-blog__item-heading">01. Learn</h3>
+              <h3 className="home-blog__item-heading">01. Sifatli ta`lim</h3>
               <p className="home-blog__item-description">
-                Lorem ipsum dolor sit amet, consectetur dolorili adipiscing
-                elit. Felis donec massa aliqua.
+                Doimiy yangilanib boradigan kurslar va katta tajribaga ega
+                ustozlar.
               </p>
             </li>
             <li className="home-blog__item">
@@ -234,10 +233,10 @@ const Home = () => {
                 alt=""
                 className="home-blog__item-img"
               />
-              <h3 className="home-blog__item-heading">02. Graduate</h3>
+              <h3 className="home-blog__item-heading">02. Sertifikat</h3>
               <p className="home-blog__item-description">
-                Lorem ipsum dolor sit amet, consectetur dolorili adipiscing
-                elit. Felis donec massa aliqua.
+                Kursni muvaffaqiyatli tamomlagan o‘quvchilar sertifikatga ega
+                bo‘ladi.
               </p>
             </li>
             <li className="home-blog__item">
@@ -246,10 +245,10 @@ const Home = () => {
                 alt=""
                 className="home-blog__item-img"
               />
-              <h3 className="home-blog__item-heading">03. Work</h3>
+              <h3 className="home-blog__item-heading">03. Kafolatli ish</h3>
               <p className="home-blog__item-description">
-                Lorem ipsum dolor sit amet, consectetur dolorili adipiscing
-                elit. Felis donec massa aliqua.
+                Kurslarni muvaffaqiyatli bitirgan o‘quvchilarga ish taklif
+                qilish kafolatini beradi.
               </p>
             </li>
           </ul>
@@ -260,10 +259,10 @@ const Home = () => {
         <div className="container home-category__container">
           <div className="home-category__heading home-section__heading">
             <h2 className="home-category__title home-section__title">
-              Top <span>Categories</span>
+              Top <span>Toifalar</span>
             </h2>
             <p className="home-category__description home-section__description">
-              12,000+ unique online course list designs
+              10+ online va ofline kurslar
             </p>
           </div>
           {/* Category Cards */}
@@ -325,17 +324,16 @@ const Home = () => {
             {/* About section Information Content */}
             <div className="home-about__content">
               <h3 className="home-about__content-title">
-                The number one factor in{" "}
-                <span>relevance drives out resistance.</span>
+                Dasturlash va dizayn kabi{" "}
+                <span>zamonaviy kasblar o‘rgatiladigan markaz.</span>
               </h3>
               <p className="home-about__content-description">
-                Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                cupidatat non proident, sunt in culpa qui officia deserunt
-                mollit anim id est laborum.
+                "WebX" - bu EduPower o'quv markazi tasarrufidagi zamonaviy
+                kasblarni o'qitishga mo'ljallangan sifatli ta'lim beruvchi
+                loyiha
               </p>
               <Link className="home-about__content-btn site-btn">
-                Learn more
+                Batafsil ma'lumot
               </Link>
             </div>
           </div>
@@ -351,10 +349,10 @@ const Home = () => {
           {/* Testimonials Heading */}
           <div className="home-testimonials__heading home-section__heading">
             <h2 className="home-testimonials__title home-section__title">
-              <span>Testimonials</span>
+              O'quvchilarimiz <span>Fikrlari</span>
             </h2>
             <p className="home-testimonials__description home-section__description">
-              What our student say about us
+              O'quvchilarimizning biz haqimizdagi fikrlari qanday
             </p>
           </div>
           {/* Slider */}

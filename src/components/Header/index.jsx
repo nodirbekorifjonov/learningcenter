@@ -224,6 +224,17 @@ const Header = () => {
         </div>
         {/* Aside Navigation */}
         <nav className={`asidenav ${asidenav ? "active" : " "}`}>
+          {/* Close btn */}
+          <button
+            onClick={() => setAsidenav(false)}
+            className="asidenav__close"
+          >
+            <IoClose />
+          </button>
+          {/* Logo */}
+          <Link to="/" className="header__logo aside__logo">
+            <img src="/assets/images/logo.svg" alt="" />
+          </Link>
           <ul className="asidenav__list">
             <li className="asidenav__item">
               <div
@@ -232,7 +243,7 @@ const Header = () => {
                 }
                 className="asidenav__link asidenav__link-div"
               >
-                <IoIosArrowUp /> Bosh sahifa
+                Bosh sahifa <IoIosArrowUp />
               </div>
               <ul
                 className={`asidenav__item-dropdown-list ${
@@ -240,49 +251,49 @@ const Header = () => {
                 }`}
               >
                 <li className="asidenav__item-dropdown-item">
-                  <Link
+                  <a
                     onClick={handleDropdown}
-                    to="/"
+                    href="/#courses"
                     className="asidenav__item-dropdown-link"
                   >
-                    Kurslar <FaGraduationCap />
-                  </Link>
+                    <FaGraduationCap /> Kurslar
+                  </a>
                 </li>
                 <li className="asidenav__item-dropdown-item">
-                  <Link
+                  <a
                     onClick={handleDropdown}
-                    to="/"
+                    href="/#blog"
                     className="asidenav__item-dropdown-link"
                   >
-                    Blog <FaComment />
-                  </Link>
+                    <FaComment /> Blog
+                  </a>
                 </li>
                 <li className="asidenav__item-dropdown-item">
-                  <Link
+                  <a
                     onClick={handleDropdown}
-                    to="/"
+                    href="/#category"
                     className="asidenav__item-dropdown-link"
                   >
-                    Kategoriyalar <BiSolidCategory />
-                  </Link>
+                    <BiSolidCategory /> Kategoriyalar
+                  </a>
                 </li>
                 <li className="asidenav__item-dropdown-item">
-                  <Link
+                  <a
                     onClick={handleDropdown}
-                    to="/"
+                    href="/#about"
                     className="asidenav__item-dropdown-link"
                   >
-                    Biz haqimizda <FaCircleInfo />
-                  </Link>
+                    <FaCircleInfo /> Biz haqimizda
+                  </a>
                 </li>
                 <li className="asidenav__item-dropdown-item">
-                  <Link
+                  <a
                     onClick={handleDropdown}
-                    to="/"
+                    href="/#testimonials"
                     className="asidenav__item-dropdown-link"
                   >
-                    Fikrlar <TfiThought />
-                  </Link>
+                    <TfiThought /> Fikrlar
+                  </a>
                 </li>
               </ul>
             </li>
@@ -322,6 +333,10 @@ const Header = () => {
             Bog'lanish
           </Link>
         </nav>
+        {/* Overflow */}
+        {asidenav && (
+          <div onClick={() => setAsidenav(false)} className="overflow"></div>
+        )}
       </div>
     </header>
   );
