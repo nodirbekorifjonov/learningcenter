@@ -5,16 +5,23 @@
         "courseName": "Basics of IT",
         "courseDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
         "courseImg": "Scratch.png",
-        "courseTechnologies": "",
+        "courseTechnologies": [
+            "Kompyuter savodxonligi",
+            "MS Office (Word, Excel, PowerPoint)",
+            "Canva",
+            "Scratch"
+        ],
         "courseDuration": 3,
         "courseDurationWeek": 3,
         "courseDurationClock": 2,
         "coursePriceOffline": 300000,
-        "coursePriceOnline": 350000,
+        "coursePriceOnline": "Mavjud emas",
         "courseStudents": 50,
         "courseRating": 4.5,
         "courseDegree": "O'rta",
-        "courseLanguage": "O'zbek"
+        "courseLanguage": "O'zbek",
+        "courseInstructor": "nodirbekorifjonov",
+        "courseDiscount": 0
     },
     {
         "id": "frontend-react",
@@ -22,16 +29,26 @@
         "courseName": "React Frontend",
         "courseDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
         "courseImg": "Scratch.png",
-        "courseTechnologies": "",
+        "courseTechnologies": [
+            "HTML",
+            "CSS",
+            "Bootstrap",
+            "Sass/Scss",
+            "TailwindCss",
+            "JavaScript",
+            "ReactJs"
+        ],
         "courseDuration": 7,
         "courseDurationWeek": 3,
         "courseDurationClock": 2,
-        "coursePriceOffline": 350000,
-        "coursePriceOnline": 350000,
+        "coursePriceOffline": 300000,
+        "coursePriceOnline": "Mavjud emas",
         "courseStudents": 50,
         "courseRating": 4,
         "courseDegree": "O'rta",
-        "courseLanguage": "O'zbek"
+        "courseLanguage": "O'zbek",
+        "courseInstructor": "nodirbekorifjonov",
+        "courseDiscount": 0
     },
     {
         "id": "graphic-design",
@@ -44,11 +61,13 @@
         "courseDurationWeek": 3,
         "courseDurationClock": 2,
         "coursePriceOffline": 400000,
-        "coursePriceOnline": 350000,
+        "coursePriceOnline": "Mavjud emas",
         "courseStudents": 50,
         "courseRating": 4,
         "courseDegree": "O'rta",
-        "courseLanguage": "O'zbek"
+        "courseLanguage": "O'zbek",
+        "courseInstructor": "shukurulloanvarov",
+        "courseDiscount": 0
     },
     {
         "id": "smm",
@@ -61,10 +80,12 @@
         "courseDurationWeek": 3,
         "courseDurationClock": 2,
         "coursePriceOffline": 400000,
-        "coursePriceOnline": 350000,
+        "coursePriceOnline": "Mavjud emas",
         "courseStudents": 50,
         "courseRating": 3.5,
         "courseDegree": "O'rta",
-        "courseLanguage": "O'zbek"
+        "courseLanguage": "O'zbek",
+        "courseInstructor": "nodirbekorifjonov",
+        "courseDiscount": 0
     }
 ]
