@@ -11,7 +11,6 @@ import testimonials from "../../data/testimonials.json";
 // Components
 import TestimonialSlider from "../../components/TestimonialSlider";
 import Cards from "../../components/Cards";
-import TestDemoText from "../../components/TestModeText";
 
 const Home = () => {
   const [courseType, setCourseType] = useState("all");
@@ -38,7 +37,6 @@ const Home = () => {
 
   return (
     <>
-      <TestDemoText />
       {/* Hero Section */}
       <section id="hero" className="home-hero">
         <div className="container home-hero__container">
@@ -297,7 +295,6 @@ const Home = () => {
           <TestimonialSlider testimonials={testimonials} />
         </div>
       </section>
-      <TestDemoText />
       {showBackToTop && (
         <button className="back-to-top" onClick={handleBackToTop}>
           <IoIosArrowUp />

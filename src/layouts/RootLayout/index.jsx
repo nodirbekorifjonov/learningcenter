@@ -6,6 +6,7 @@ import "./style.css";
 // components
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
+import TestDemoText from "../../components/TestModeText";
 
 const RootLayout = () => {
   return (
@@ -14,7 +15,9 @@ const RootLayout = () => {
       <Header />
       {/* main */}
       <main>
+        <TestDemoText />
         <Outlet />
+        <TestDemoText />
       </main>
       {/* footer */}
       <Footer />

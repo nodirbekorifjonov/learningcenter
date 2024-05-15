@@ -19,7 +19,10 @@ const Cards = ({ courses, courseType }) => {
           .map((course) => {
             return (
               <li key={course.id} className="home-course__item">
-                <Link className="home-course__link">
+                <Link
+                  to={`/courses/${course.id}`}
+                  className="home-course__link"
+                >
                   <img
                     className="home-course__card-img"
                     src={`/assets/images/${course.courseImg}`}
