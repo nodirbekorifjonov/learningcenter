@@ -119,7 +119,7 @@ const CourseDetails = () => {
           <div className="course-details__main">
             {/* Course Details Basic */}
             <div className="course-details__main-basic">
-              <img src={`/public/assets/images/${result.courseImg}`} alt="" />
+              <img src={`/assets/images/${result.courseImg}`} alt="" />
               <div className="course-details__main-format">
                 <div>
                   <span className="course-details__main-format-icon">
