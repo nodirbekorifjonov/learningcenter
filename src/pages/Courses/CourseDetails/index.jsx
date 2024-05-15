@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { Fragment, useEffect, useRef, useState } from "react";
 // styles
 import "./style.css";
 // react-icons
@@ -22,6 +22,12 @@ const CourseDetails = () => {
   const [technologies, setTechnologies] = useState([]);
   const { id } = useParams();
 
+  const myRef = useRef(null);
+
+  useEffect(() => {
+    myRef.current.scrollIntoView({ behavior: "smooth" });
+  }, []);
+
   useEffect(() => {
     const foundCourse = coursesData.find((course) => course.id == id);
     setResult(foundCourse);
@@ -29,9 +35,9 @@ const CourseDetails = () => {
   }, [id]);
 
   return (
-    <>
+    <div ref={myRef}>
       {/* Course Details Heading */}
-      <section className="course__heading">
+      <section id="course-details" className="course__heading">
         <div className="container course__heading-container">
           <div className="course__type">{result.courseType}</div>
           <h2 className="course__name">{result.courseName}</h2>
@@ -197,7 +203,7 @@ const CourseDetails = () => {
           </div>
         </div>
       </section>
-    </>
+    </div>
   );
 };
 
