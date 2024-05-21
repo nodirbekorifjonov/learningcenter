@@ -2,8 +2,8 @@
 @import url(./fonts/fonts.css);
 
 :root {
-  --primary-color: #2aaa94;
-  --secondary-color: #324361;
+  --primary-color: rgb(42, 170, 148);
+  --secondary-color: rgb(50, 68, 98);
   --white-color: #ffffff;
   --text-color: #4e596b;
 }

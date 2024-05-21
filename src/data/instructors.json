@@ -1,0 +1,44 @@
+[
+    {
+        "instructorId": "nodirbekorifonov",
+        "instructorName": "Nodirbek Orifjonov",
+        "instructorPhoto": "Scratch.png",
+        "instructorDescription": "Fulfilled direction use continual set him propriety continued. Saw met applauded favorite deficient engrossed concealed and her. Concluded boy perpetual old supposing. Farther related bed and passage comfort civilly. Dashboard see frankness objection abilities. As hastened oh produced prospect formerly up am. Placing forming nay looking old married few has. Margaret disposed of add screened rendered six say his striking confined.",
+        "instructorWorked": "Webx",
+        "instructorExperience": 1,
+        "instructorStudents": 10,
+        "instructorGraduation": "Najot Ta`lim",
+        "instructorCourses": 2,
+        "instructorLinks": {
+            "github": "",
+            "linkedin": "",
+            "behance": "",
+            "telegram": "t.me/nodirbekorifjonov",
+            "instragram": "instagram.com/mr.crevtive",
+            "facebook": "",
+            "website": "nfaumi.netlify.app",
+            "email": "nodirbekorifjonov@mail.ru"
+        }
+    },
+    {
+        "instructorId": "shukurulloanvarov",
+        "instructorName": "Shukurullo Anvarov",
+        "instructorPhoto": "Shukurullo Anvarov",
+        "instructorDescription": "Fulfilled direction use continual set him propriety continued. Saw met applauded favorite deficient engrossed concealed and her. Concluded boy perpetual old supposing. Farther related bed and passage comfort civilly. Dashboard see frankness objection abilities. As hastened oh produced prospect formerly up am. Placing forming nay looking old married few has. Margaret disposed of add screened rendered six say his striking confined.",
+        "instructorWorked": "Webx",
+        "instructorExperience": 1,
+        "instructorStudents": 10,
+        "instructorGraduation": "Najot Ta`lim",
+        "instructorCourses": 1,
+        "instructorLinks": {
+            "github": "",
+            "linkedin": "",
+            "behance": "",
+            "telegram": "t.me/nodirbekorifjonov",
+            "instragram": "instagram.com/mr.crevtive",
+            "facebook": "",
+            "website": "nfaumi.netlify.app",
+            "email": "nodirbekorifjonov@mail.ru"
+        }
+    }
+]

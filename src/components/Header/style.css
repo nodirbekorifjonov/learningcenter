@@ -170,7 +170,7 @@
 .aside__contact-btn {
   display: block;
   padding: 1.5rem 3rem;
-  background: linear-gradient(#083f9b, #7f56d9);
+  background: linear-gradient(rgb(8, 63, 155), rgb(127, 86, 217));
   color: var(--white-color);
   font-size: 2rem;
   border-radius: 1rem;

@@ -1,0 +1,22 @@
+.success-modal {
+  position: fixed;
+  z-index: 10000;
+  background: #fff;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.success-modal div {
+  padding: 2rem;
+  text-align: center;
+}
+
+.success-modal h2 {
+  text-align: 2.6rem;
+  text-align: center;
+}

@@ -40,8 +40,8 @@ const Cards = ({ courses, courseType }) => {
                     {/* Course description */}
                     <p className="home-course__card-description">
                       {`${
-                        course.courseDescription.length >= 65
-                          ? course.courseDescription.slice(0, 65)
+                        course.courseDescription.length >= 55
+                          ? course.courseDescription.slice(0, 55)
                           : course.courseDescription
                       }...`}
                     </p>

@@ -124,6 +124,223 @@
   font-family: "RobotoMedium";
 }
 
+/* Course Instructor */
+/* Instructor Main Info */
+.course-instructor,
+.course-registration {
+  padding: 3rem;
+  color: #747579;
+  font-family: "Roboto";
+}
+
+.course-instructor-main {
+  display: flex;
+  gap: 3rem;
+}
+
+.course-instructor-main img {
+  width: 28.2rem;
+  height: 28.2rem;
+  object-fit: cover;
+  border-radius: 0.6rem;
+}
+
+.course-instructor__name {
+  font-size: 2.8rem;
+  font-family: "RobotoMedium";
+  color: #1b2336;
+  margin-bottom: 0.5rem;
+}
+
+.course-instructor__links-list {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  margin-top: 1rem;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.course-instructor__links-item {
+  transition: all 0.3s ease;
+}
+
+.course-instructor__links-item:hover {
+  transform: translateY(-3px);
+}
+
+.course-instructor__links-item.link-github {
+  color: #066ac9;
+}
+
+.course-instructor__links-item.link-instagram {
+  color: #c22b72;
+}
+
+.course-instructor__links-item.link-facebook {
+  color: #5d82d1;
+}
+
+.course-instructor__links-item.link-linkedin {
+  color: #238cc8;
+}
+
+.course-instructor__links-item.link-telegram {
+  color: #2ba2de;
+}
+
+.course-instructor__links-item.link-behance {
+  color: #0057ff;
+}
+
+.course-instructor__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem 5rem;
+  margin-bottom: 3rem;
+}
+
+.course-instructor__item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.course-instructor__item-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3.5rem;
+  height: 3.5rem;
+  color: rgba(253, 126, 20, 1);
+  background-color: rgba(253, 126, 20, 0.1);
+  border-radius: 50%;
+}
+
+.course-instructor__item-text {
+  color: #24292d;
+}
+
+.course-instructor__item-text span {
+  font-family: "RobotoMedium";
+}
+
+.course-instructor__graduation {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: #24292d;
+}
+
+.course-instructor__graduation-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3.5rem;
+  height: 3.5rem;
+  background-color: rgba(245, 247, 249, 1);
+  border-radius: 0.6rem;
+}
+
+.course-instructor__graduation-text {
+  font-family: "RobotoMedium";
+}
+
+/* Instructor Description */
+.course-instructor__description {
+  padding-top: 3rem;
+}
+
+.course-instructor__description h4 {
+  font-size: 2rem;
+  color: #1b2336;
+  margin-bottom: 1.5rem;
+}
+
+.course-instructor__description p {
+  margin-bottom: 2rem;
+  text-align: justify;
+}
+
+.course-instructor__description-item a {
+  color: #066ac9;
+}
+
+/* Registration */
+.course-registration__content {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.course-registration__content img {
+  background-color: rgba(112, 195, 255, 0.5);
+  border-radius: 1rem;
+  align-self: self-start;
+}
+
+.course-registration h3 {
+  font-family: "Roboto";
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+#surveyForm {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+input,
+textarea {
+  /* outline: none; */
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: #f5f7f9;
+  border: 1px solid #f5f7f9;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+input::placeholder {
+  color: #747579;
+}
+
+.promocode-btn {
+  margin-bottom: 2rem;
+  background: var(--primary-color);
+  align-self: flex-start;
+  padding: 0.8rem 1.6rem;
+  border: none;
+}
+
+.loader {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #fff;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 /* Course Details Main */
 .course-details__main {
   width: 100%;
@@ -256,11 +473,73 @@
   .course-details__container {
     grid-template-columns: 1.5fr 1fr;
   }
+
+  /* Instructor */
+  .course-instructor__name {
+    font-size: 2.4rem;
+  }
+
+  .course-instructor__list {
+    grid-template-columns: 1fr;
+  }
+
+  .course-instructor__list {
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 1105px) {
+  .course-instructor__name {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 1047px) {
+  .course-instructor-main {
+    gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 1160px) {
+  .course-registration__content {
+    flex-direction: column;
+  }
+
+  .course-registration__content img {
+    align-self: center;
+  }
+}
+
+@media screen and (max-width: 1030px) {
+  .course-instructor-main {
+    flex-direction: column;
+  }
+
+  .course-instructor-main img {
+    width: 100%;
+    height: auto;
+  }
+
+  .course-instructor__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
 }
 
 @media screen and (max-width: 986px) {
   .course-details__container {
     grid-template-columns: 1fr;
+  }
+
+  .course-registration__content {
+    flex-direction: row;
+  }
+
+  .course-registration__content img {
+    align-self: flex-start;
   }
 }
 
@@ -305,5 +584,19 @@
 
   .course-details__main-info {
     padding: 2rem 1.5rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .course-registration__content {
+    flex-direction: column;
+  }
+
+  .course-registration__content img {
+    width: 100%;
+  }
+
+  #surveyForm {
+    width: 100%;
   }
 }
