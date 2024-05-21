@@ -47,8 +47,13 @@ const Home = () => {
               <span>IT</span> olamiga ilk qadamni biz bilan qo'ying
             </h1>
             <div className="home-hero__btns">
-              <Link className="home-hero__btn-courses">Kurslarni ko'rish</Link>
-              <Link className="home-hero__btn-consultation">
+              <Link to="courses" className="home-hero__btn-courses">
+                Kurslarni ko'rish
+              </Link>
+              <Link
+                to="tel:+998882710323"
+                className="home-hero__btn-consultation"
+              >
                 Bepul <br /> konsultatsiya oling
               </Link>
               <Link className="home-hero__btn-consultation mobile">
@@ -268,14 +273,26 @@ const Home = () => {
                 kasblarni o'qitishga mo'ljallangan sifatli ta'lim beruvchi
                 loyiha
               </p>
-              <Link className="home-about__content-btn site-btn">
+              <Link
+                to="https://t.me/uzwebx"
+                className="home-about__content-btn site-btn"
+              >
                 Batafsil ma'lumot
               </Link>
             </div>
           </div>
           {/* About Section Video */}
           <div className="home-about__video">
-            <img src="/assets/images/home-video.png" alt="" />
+            <iframe
+              width="560"
+              height="630"
+              src="https://www.youtube.com/embed/wvlHuishSdI?si=Bc_hlHh-sx_SSkrU"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
           </div>
         </div>
       </section>
