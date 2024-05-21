@@ -178,7 +178,7 @@ const Header = () => {
             </ul>
           </button>
           {/* Contact Button */}
-          <Link to="/" className="contact-btn">
+          <Link to="/contact" className="contact-btn">
             Bog'lanish
           </Link>
         </div>

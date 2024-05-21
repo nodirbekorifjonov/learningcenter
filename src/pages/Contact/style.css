@@ -1,0 +1,150 @@
+#contact {
+  padding: 7rem 0;
+}
+
+/* Contact Heading */
+.contact__heading {
+  width: 90rem;
+  text-align: center;
+  margin: 0 auto 5rem;
+}
+
+.contact__heading h2 {
+  font-family: "RowdiesBold";
+  font-size: 4.5rem;
+  color: var(--text-color);
+  margin-bottom: 3rem;
+}
+
+.contact__heading h2 span {
+  color: var(--primary-color);
+}
+
+.contact__heading p {
+  font-size: 2.5rem;
+}
+
+.contact__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 3rem;
+  margin-bottom: 4rem;
+}
+
+.contact__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+  font-size: 4.5rem;
+  border-radius: 1rem;
+  color: var(--white-color);
+  transition: all 0.3s ease;
+}
+
+.contact__link:hover {
+  box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+  transform: translateY(-5px);
+}
+
+.contact__item:nth-child(1) .contact__link {
+  background: linear-gradient(115deg, #70f570, #49c628);
+}
+
+.contact__item:nth-child(2) .contact__link {
+  background: linear-gradient(115deg, #1364dd, #0095ff);
+}
+
+.contact__item:nth-child(3) .contact__link {
+  background: linear-gradient(
+    115deg,
+    #f9ce34,
+    #ee2a7b,
+    rgba(93, 14, 252, 0.719)
+  );
+}
+
+.contact__item:nth-child(4) .contact__link {
+  background: linear-gradient(115deg, #1364dd, #0095ff);
+}
+
+.contact__location {
+  width: 100%;
+}
+
+.contact__location h4 {
+  font-size: 2.4rem;
+  margin-bottom: 2rem;
+}
+
+.contact__location iframe {
+  width: 100%;
+  border-radius: 1rem;
+  box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+}
+
+/* Responsives */
+@media screen and (max-width: 1200px) {
+  .contact__heading p {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 958px) {
+  .contact__heading {
+    width: 100%;
+  }
+
+  .contact__list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 940px) {
+  .contact__heading {
+    margin-bottom: 3rem;
+  }
+
+  .contact__heading h2 {
+    font-size: 4rem;
+    margin-bottom: 1.6rem;
+  }
+
+  .contact__heading p {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  .contact__heading h2 {
+    font-size: 3rem;
+  }
+
+  .contact__heading p {
+    font-size: 1.6rem;
+  }
+
+  .contact__link {
+    font-size: 3.5rem;
+  }
+}
+
+@media screen and (max-width: 656px) {
+  #contact {
+    padding: 4rem 0;
+  }
+
+  .contact__list {
+    gap: 2rem;
+  }
+
+  .contact__location h4 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 315px) {
+  .contact__list {
+    grid-template-columns: 1fr;
+  }
+}
