@@ -51,7 +51,7 @@ const Home = () => {
                 Kurslarni ko'rish
               </Link>
               <Link
-                to="tel:+998882710323"
+                to="tel:+998330018191"
                 className="home-hero__btn-consultation"
               >
                 Bepul <br /> konsultatsiya oling
@@ -138,7 +138,9 @@ const Home = () => {
           {/* Course Cards */}
           <Cards courses={courses} courseType={courseType} />
           {/* Course Buttons */}
-          <Link className="home-course__btn site-btn">Barcha kurslar</Link>
+          <Link to="courses" className="home-course__btn site-btn">
+            Barcha kurslar
+          </Link>
         </div>
       </section>
       {/* Blog Section */}

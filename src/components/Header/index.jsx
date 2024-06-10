@@ -110,7 +110,7 @@ const Header = () => {
             </li>
             <li className="sitenav__item">
               <Link
-                to="news"
+                to="/"
                 className={`sitenav__link ${
                   location.pathname === "/news" ? "active" : " "
                 }`}
@@ -130,7 +130,7 @@ const Header = () => {
             </li>
             <li className="sitenav__item">
               <Link
-                to="team"
+                to="/"
                 className={`sitenav__link ${
                   location.pathname === "/team" ? "active" : " "
                 }`}
@@ -300,7 +300,7 @@ const Header = () => {
             <li className="asidenav__item">
               <Link
                 onClick={() => setAsidenav(false)}
-                to="news"
+                to="/"
                 className="asidenav__link"
               >
                 Yangiliklar
@@ -318,7 +318,7 @@ const Header = () => {
             <li className="asidenav__item">
               <Link
                 onClick={() => setAsidenav(false)}
-                to="team"
+                to="/"
                 className="asidenav__link"
               >
                 Jamoa

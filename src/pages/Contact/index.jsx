@@ -28,7 +28,7 @@ const Contact = () => {
         </div>
         <ul className="contact__list">
           <li className="contact__item">
-            <Link to="tel:+998882710323" className="contact__link">
+            <Link to="tel:+998330018191" className="contact__link">
               <FaPhoneAlt />
             </Link>
           </li>

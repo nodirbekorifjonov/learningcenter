@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 // styles
 import "./style.css";
 // data
@@ -8,8 +8,14 @@ import Cards from "../../components/Cards";
 const Courses = () => {
   const [courseType, setCourseType] = useState("all");
 
+  const myRef = useRef(null);
+
+  useEffect(() => {
+    myRef.current.scrollIntoView({ behavior: "smooth" });
+  }, []);
+
   return (
-    <section className="courses">
+    <section ref={myRef} className="courses">
       <div className="container home-courses__container">
         <div className="home-course__heading home-section__heading">
           <h2 className="home-courses__title home-section__title">

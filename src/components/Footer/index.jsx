@@ -39,12 +39,20 @@ const Footer = () => {
             <h3 className="footer-top__heading">Sahifalar</h3>
             <ul className="footer-top__pages-list">
               <li className="footer-top__pages-item">
-                <Link className="footer-top__pages-link">Kurslar</Link>
-                <Link className="footer-top__pages-link">Loyihalar</Link>
+                <Link to="courses" className="footer-top__pages-link">
+                  Kurslar
+                </Link>
+                <Link to="/" className="footer-top__pages-link">
+                  Loyihalar
+                </Link>
               </li>
               <li className="footer-top__pages-item">
-                <Link className="footer-top__pages-link">Jamoa</Link>
-                <Link className="footer-top__pages-link">Bog'lanish</Link>
+                <Link to="/" className="footer-top__pages-link">
+                  Jamoa
+                </Link>
+                <Link to="contact" className="footer-top__pages-link">
+                  Bog'lanish
+                </Link>
               </li>
             </ul>
           </div>
@@ -57,9 +65,9 @@ const Footer = () => {
                   <FiPhone />
                   <Link
                     className="footer-top__contacts-link"
-                    to="tel:+998882710323"
+                    to="tel:+998330018191"
                   >
-                    +998 (88) 271-0323
+                    +998 (33) 001-8191
                   </Link>
                 </li>
                 <li className="footer-top__contacts-item">
@@ -77,7 +85,7 @@ const Footer = () => {
                 <span>
                   <GrLocation />
                 </span>
-                <Link>
+                <Link to="https://maps.app.goo.gl/uqnarwq2nxc82jue7">
                   Farg'ona viloyati, Rishton tumani, Uch ariq qishlog'i
                 </Link>
               </div>
